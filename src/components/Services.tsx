@@ -4,9 +4,9 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <div className="i">
-        <h1 className="text-3xl p-4 text-center">
-          From essential services to br earning opportunities.
+      <div className="">
+        <h1 className="text-xl md:text-2xl p-4 text-center">
+          From essential services to earning opportunities.
           <br /> We're an all-in-one platform.
         </h1>
         <div className="p-4 ">
