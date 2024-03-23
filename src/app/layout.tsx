@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <html data-theme="dark"></html>
-      <body>
+      <body className="bg-black text-white">
         <Navbar />
-        <main className="relative overflow-hidden">{children}</main>
+        <main className="relative overflow-hidden bg-black text-white">{children}</main>
         <Footer />
       </body>
     </html>

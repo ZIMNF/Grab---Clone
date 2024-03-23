@@ -5,7 +5,7 @@ import Testi from "@/components/Testi";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" bg-black text-white">
       <Video />
       <Services />
       <History />

@@ -10,6 +10,10 @@ const Navbar = () => {
     setIsClick(!isClick);
   };
 
+  const handleLinkClick = () => {
+    setIsClick(false); // Menyembunyikan navbar setelah link diklik
+  };
+
   return (
     <nav className="flex z-30 py-3 px-3 fixed w-full top-0 left-0 backdrop-blur-sm justify-between">
       <Link href="/" className="text-3xl font-bold">
@@ -43,13 +47,13 @@ const Navbar = () => {
           {isClick && (
             <div className="sm:hidden items-center">
               <div className="pt-2 pb-3 spce-y-1 sm:px-3">
-                <Link href="/about" className=" text-white block hover:bg-white hover:text-black rounded-lg p-2 ">
+                <Link href="/about" onClick={handleLinkClick} className=" text-white block hover:bg-white rounded-lg p-2 font-bold">
                   About
                 </Link>
-                <Link href="/services" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                <Link href="/services" onClick={handleLinkClick} className="text-white block hover:bg-white rounded-lg p-2 font-bold">
                   Services
                 </Link>
-                <Link href="/teams" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                <Link href="/teams" onClick={handleLinkClick} className="text-white block hover:bg-white rounded-lg p-2 font-bold">
                   Teams
                 </Link>
               </div>
