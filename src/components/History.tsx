@@ -6,7 +6,7 @@ function History() {
     <div>
       <div className="hero min-h-screen pt-16">
         <div className="hero-content flex-col lg:flex-row">
-          <Image src={require("../../public/h1.png")} alt="abot" width={700} className="h-auto rounded-lg shadow-2xl" />
+          <Image src={require("../../public/h1.png")} alt="abot" loading="lazy" width={700} className="h-auto rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-3xl font-bold">
               <Link href="/about">A letter from Anthony and Hooi Ling </Link>
