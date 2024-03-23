@@ -42,7 +42,7 @@ function Services() {
             <hr />
           </div>
         </div>
-        <div className="hero-content flex-col lg:flex-row">
+        <div id="rides" className="hero-content flex-col lg:flex-row">
           <Image src={require("../../../public/a5.png")} alt="abot" width={400} className="h-auto rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-2xl md:text-3xl font-bold pb-4">Going somewhere? Let our reliable taxi service transport you there</h1>
